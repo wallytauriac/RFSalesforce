@@ -8,11 +8,11 @@ def get_Oauth_token():
     params = {
         "grant_type": "password",
         # Consumer Key
-        "client_id": "3MVG9cHH2bfKACZYn6XBmJXDPNqgaI3XzN4qgiQDwQy5tbG6U0QnzcoaajU4Ba7vFImV_bi0JnShR5u.1u4qC",
+        "client_id": "Your client ID",
         # Consumer Secret
-        "client_secret": "1746DCFE2386B0709B75387E3818DB9BB0BB609B2D836921A2BE296B295FA1B2",
-        "username": "wallytauriac@gmail.com",  # The email you use to login
-        "password": "SummerWT#2021wVdIhfOUTFCTILuhqFGHgi4n"  # Concat your password and your security token
+        "client_secret": "Your client secret",
+        "username": "Your username",  # The email you use to login
+        "password": "Your password"  # Concat your password and your security token
     }
     # Driver Body - Get Token
     r = requests.post("https://login.salesforce.com/services/oauth2/token", params=params)
@@ -25,25 +25,25 @@ def get_Oauth_token():
 
 def set_security_data():
     # Consumer Key
-    client_id = '3MVG9cHH2bfKACZYn6XBmJXDPNqgaI3XzN4qgiQDwQy5tbG6U0QnzcoaajU4Ba7vFImV_bi0JnShR5u.1u4qC'
+    client_id = ''
 
     # Consumer Secret
-    client_secret = '1746DCFE2386B0709B75387E3818DB9BB0BB609B2D836921A2BE296B295FA1B2'
+    client_secret = ''
 
     # Callback URL
-    redirectUri = 'https://soldoutinvestmentsinc-dev-ed.lightning.force.com/callback'
+    redirectUri = ''
 
     # Header data
     headers = {"Content-Type": "application/json"}
 
     # sfdc_user = your SFDC username
-    sfdc_user = 'wallytauriac@gmail.com'
+    sfdc_user = ''
 
     # Security Token for password
-    security_token = 'wVdIhfOUTFCTILuhqFGHgi4n'
+    security_token = ''
 
     # sfdc_pass = your SFDC password
-    psw = 'SummerWT#2021'
+    psw = ''
     sfdc_pass = psw + security_token
 
 
